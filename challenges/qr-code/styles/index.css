@@ -1,0 +1,76 @@
+:root {
+    --blue-shade: #D5E1EF;
+    --grey: #7D889E;
+    --grey-light: #D5E1EF;
+    --dark-navy: #1F314F;
+    --blue:#2C7DFA;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--blue-shade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+       font-family: "Outfit", sans-serif;
+}
+
+.qr-card {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+   
+}
+
+.qr-card__image {
+    width: 100%;
+        border-radius: 10px;
+
+
+}
+.qr-card__description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.qr-card__heading {
+    color: var(--dark-navy);
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+
+}
+.qr-card__description{
+    font-size: 15px;
+    text-align: center;
+    color: var(--grey);
+}
+
+  .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 20px;
+      color: var(--grey);
+    }
+
+    .attribution a {
+      color: var(--blue);
+    }
