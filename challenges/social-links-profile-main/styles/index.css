@@ -1,0 +1,128 @@
+
+:root {
+--white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 20%);
+--dark-grey: hsl(0, 0%, 12%);
+--black: hsl(0, 0%, 8%);
+---green: hsl(75, 94%, 57%);
+
+}
+ *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html{
+     font-family: "Inter", sans-serif;
+ 
+ }
+body {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.social-card {
+    background-color: var(--dark-grey);
+    width: 350px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+
+.social-card__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-card__image {
+    width: 80px;
+    height: 80px;
+    background:  url("../assets/images/avatar-jessica.jpeg");
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+
+}
+.social-card__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.social-card__name {
+
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--white);
+}
+ .social-card__location {
+    
+    font-weight: bold;
+    font-size: 14px;
+    color: var(---green);
+
+ }
+
+
+ .social-card__description {
+    color: var(--white);
+    font-size: 13px;
+ }
+
+
+ .social-card__links {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+ }
+
+
+ .social-card__link {
+    width: 100%;
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    align-items: center;
+    transition: all, .2s;
+    cursor: pointer;
+ }
+ .social-card__link:hover{
+    background-color: var(---green);
+    color: var(---grey);
+
+ }
+ .social-card__link a ,
+ .social-card__link a:visited, .social-card__link a:link
+ {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: inherit;
+ }
+
+.attribution {
+    color: var(--white);
+    font-weight: bold;
+}
