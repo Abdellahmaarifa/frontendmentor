@@ -5,8 +5,8 @@
     --light-grey: hsl(30, 18%, 87%);
     --wenge-brown: hsl(30, 10%, 34%);
     --wark-charcoal: hsl(24, 5%, 18%);
-    --nutmeg: hsl(14, 45%, 36%)
-    --dark-raspberry: hsl(332, 51%, 32%)
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
 }
 
 *,*::before, *::after {
@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -37,6 +38,9 @@ body {
 
 .recipe__header {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .recipe__header-image {
@@ -55,16 +59,20 @@ body {
 
 }
 .recipe__preparation {
+    padding: 20px;
+    background-color: var(--rose-white);
+    border-radius: 15px;
 
 }
 .recipe__preparation-heading {
+    color: var(--nutmeg);
 
 }
 .recipe__preparation-list-container {
 
 }
 .recipe__preparation-list{
-
+    list-style: none;
 }
 .recipe__preparation-list-item {
 
