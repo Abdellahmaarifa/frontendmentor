@@ -62,6 +62,9 @@ body {
     padding: 20px;
     background-color: var(--rose-white);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 .recipe__preparation-heading {
@@ -73,9 +76,23 @@ body {
 }
 .recipe__preparation-list{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+    color: var(--wenge-brown);
 }
 .recipe__preparation-list-item {
-
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+.recipe__preparation-list-item span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--nutmeg);
+    margin-right: 20px;
 }
 .recipe__body {
 
