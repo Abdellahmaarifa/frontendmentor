@@ -27,7 +27,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-
+    padding: 100px 0;
 }
 
 .recipe {
@@ -36,6 +36,7 @@ body {
     background-color: var(--white);
 }
 
+
 .recipe__header {
     padding: 30px;
     display: flex;
@@ -43,10 +44,12 @@ body {
     gap: 20px;
 }
 
-.recipe__header-image {
-    border-radius: 10px;
+.recipe__image {
+    border-radius: 20px;
     width: 100%;
-
+    margin: 30px;
+    width:calc(100% - 60px); 
+    background-color: rebeccapurple;
 }
 .recipe__heading {
     font-size: 25px;
@@ -99,7 +102,6 @@ body {
 }
 .recipe__body {
     padding: 20px;
-    /* background-color: red; */
     color: var(--wenge-brown);
 }
 .recipe__ingredients {
@@ -118,10 +120,11 @@ body {
 }
 .recipe__ingredients-list {
     list-style: none;
-
 }
 .recipe__ingredients-list-item {
     padding: 0;
+    /* display: flex;
+    align-items: center; */
 }
 .recipe__ingredients-list-item::before{
     content: ".";
@@ -147,6 +150,10 @@ padding: 20px 0;
 }
 .recipe__instructions-list-item {
     counter-increment: count;
+    display: flex;
+    gap: 20px;
+    line-height: 25px;
+    padding:3px
 }
 .recipe__instructions-list-item::before{
     content: counter(count) ".";
@@ -177,11 +184,43 @@ padding: 20px 0;
 }
 .recipe__nutrition-table-row {
     display: flex;
+    width: 100%;
+    padding: 10px 0 15px 30px;
+}
+.recipe__nutrition-table-row:not(:last-child) {
+    border-bottom: 1px solid var(--light-grey);
 }
 .recipe__nutrition-table-heading {
-
+    text-align: start;
+    width: 50%;
+    font-weight: 400;
 }
 .recipe__nutrition-table-cell {
-
+    width: 50%;
+    font-weight: 600;
+    color: var(--nutmeg);
 }
 
+.attribution {
+    margin: 22px 0;
+    color: var(--nutmeg);
+}
+@media only screen and (max-width: 800px) {
+    body {
+        padding: 0;
+        background-color: white;
+    }
+    .recipe {
+        width: 100%;
+        border-radius: 0;
+    }
+    .recipe__image {
+        border-radius: 0;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .recipe__header {
+        padding: 0 20px ;
+        /* gap: 0; */
+    }
+}
