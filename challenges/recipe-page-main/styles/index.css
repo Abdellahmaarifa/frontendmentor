@@ -40,7 +40,7 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .recipe__header-image {
@@ -49,13 +49,15 @@ body {
 
 }
 .recipe__heading {
-    font-size: 30px;
+    font-size: 25px;
       font-family: "Young Serif", serif;
       color: var(--wark-charcoal);
+      font-weight: 500;
 
 }
 .recipe__description {
     color: var(--wenge-brown);
+    line-height: 22px;
 
 }
 .recipe__preparation {
@@ -68,7 +70,8 @@ body {
 
 }
 .recipe__preparation-heading {
-    color: var(--nutmeg);
+    color: var(--dark-raspberry);
+    font-weight: 600;
 
 }
 .recipe__preparation-list-container {
@@ -78,7 +81,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     padding-left: 10px;
     color: var(--wenge-brown);
 }
@@ -95,43 +98,85 @@ body {
     margin-right: 20px;
 }
 .recipe__body {
-
+    padding: 20px;
+    /* background-color: red; */
+    color: var(--wenge-brown);
 }
 .recipe__ingredients {
-
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-grey);
 }
 .recipe__ingredients-heading {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--nutmeg);
 
 }
 .recipe__ingredients-list {
+    list-style: none;
 
 }
 .recipe__ingredients-list-item {
-
+    padding: 0;
+}
+.recipe__ingredients-list-item::before{
+    content: ".";
+    color: var(--nutmeg);
+    font-size: 40px;
+    line-height: 24px;
+    padding-right: 20px;
 }
 .recipe__instructions {
+padding: 20px 0;
+    border-bottom: 1px solid var(--light-grey);
     
 }
 .recipe__instructions-heading {
-
+    font-family: "Young Serif", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--nutmeg);
 }
 .recipe__instructions-list {
-
+    list-style: none;    
+    padding: 10px;
 }
-.recipe__ingredients-list-item {
-
+.recipe__instructions-list-item {
+    counter-increment: count;
 }
+.recipe__instructions-list-item::before{
+    content: counter(count) ".";
+    color: var(--nutmeg);
+    font-size: 15px;
+    font-weight: 600;
+}
+
 .recipe__nutrition {
+   display: flex ;
+   flex-direction: column;
+   gap: 20px;
+   padding: 20px 0;
 
+}
+.recipe__nutrition-heading {
+      font-family: "Young Serif", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--nutmeg);
 }
 .recipe__nutrition-table {
 
 }
 .recipe__nutrition-table-body {
-
+    display: flex;
+    flex-direction: column;
 }
 .recipe__nutrition-table-row {
-
+    display: flex;
 }
 .recipe__nutrition-table-heading {
 
